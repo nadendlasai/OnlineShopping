@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ShoppingContext>(options =>
 
 
 builder.Services.AddScoped<IAuthApplicationService, AuthApplicationService>();
+builder.Services.AddScoped<IDashboardApplicationService, DashboardApplicationService>();
 
 var app = builder.Build();
 
